@@ -1,0 +1,102 @@
+$primary-color: #d9d9d9;
+$secondary-color: #cce6ff;
+
+$margin: 34px;
+$length: 1000px;
+$height: 100px;
+
+$one: $margin + $height;
+$oneLeft: ($length + 2* $margin)/4;
+$small: (2* $margin + $length)/2;
+$two: (0.75* ($length + 2* $margin))/2;
+$devider: 50px;
+
+body{
+    background-color: $primary-color;
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: $secondary-color;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+
+}
+#main{
+    position: relative;
+    float: right;
+    width: 75%;
+    height: 100%;
+    overflow: auto;
+}
+#header{
+    position: absolute;
+    margin-top: $margin;
+    margin-left: $margin;
+    width: $length;
+    height: $height;
+    background-color: $secondary-color;
+    overflow: auto;
+}
+#first{
+    position: absolute;
+    top: $one;
+    margin-top: $margin;
+    left: $oneLeft;
+    width: $small;
+    height: $height;
+    background-color: $secondary-color;
+    overflow: auto;
+
+}
+#vertical{
+    position: absolute;
+    top: 2* $one;
+    margin-top: $margin;
+    margin-left: $margin;
+    width: $small/4;
+    height: 2* (1.75)* $height +$margin; 
+    background-color: $secondary-color;
+    overflow: auto;
+
+}
+
+#second{
+    position: absolute;
+    top: 2* $one;
+    left: 2*$margin + $small/4;
+    margin-top: $margin;
+    width: $two;
+    height: (1.75)* $height; 
+    background-color: $secondary-color;
+    overflow: auto;
+
+}
+#third{
+    position: absolute;
+    top: 2* $one;
+    left: 2*$margin + $small/4 + $two;
+    margin-left: $devider;
+    margin-top: $margin;
+    width: $two;
+    height: (1.75)* $height; 
+    background-color: $secondary-color;
+    overflow: auto;
+}
+#last{
+    position: absolute;
+    top: 2* $one + (1.75)* $height +$margin;
+    left: 2* $margin + $small/4 ;
+    margin-top: $margin;
+    width: 2* $two + $devider;
+    height: (1.75)* $height; 
+    background-color: $secondary-color;
+    overflow: auto;
+}
